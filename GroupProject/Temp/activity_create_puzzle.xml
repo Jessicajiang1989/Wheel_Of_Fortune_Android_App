@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.gatech.seclass.sdpguessit.CreateAPuzzle"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/saveandview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="41dp"
+        android:onClick="savePuzzle"
+        android:text="Save and View"
+        app:layout_constraintBottom_toTopOf="@+id/exit"
+        app:layout_constraintEnd_toEndOf="@+id/txtNumOfAllowedWrong"
+        app:layout_constraintStart_toStartOf="@+id/txtNumOfAllowedWrong"
+        app:layout_constraintTop_toBottomOf="@+id/txtNumOfAllowedWrong" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
+        android:layout_marginStart="20dp"
+        android:text="Exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/saveandview"
+        app:layout_constraintTop_toBottomOf="@+id/saveandview" />
+
+    <EditText
+        android:id="@+id/tPhrase"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Enter a phrase"
+        app:layout_constraintBottom_toTopOf="@+id/txtNumOfAllowedWrong"
+        app:layout_constraintEnd_toEndOf="@+id/constraint"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtNumOfAllowedWrong"
+        android:layout_width="354dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="167dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginStart="2dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Number of Allowed Wrong Guesses"
+        app:layout_constraintBottom_toTopOf="@+id/saveandview"
+        app:layout_constraintEnd_toEndOf="@+id/tPhrase"
+        app:layout_constraintStart_toStartOf="@+id/tPhrase"
+        app:layout_constraintTop_toBottomOf="@+id/tPhrase" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="380dp"
+        android:layout_height="494dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

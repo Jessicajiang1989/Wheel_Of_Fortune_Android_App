@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.gatech.seclass.sdpguessit.SolvePuzzle"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/guessConsonant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="7dp"
+        android:onClick="guessAConsonant"
+        android:text="Guess A Consonant"
+        app:layout_constraintBottom_toTopOf="@+id/buyVowel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tLetterToGuess" />
+
+    <Button
+        android:id="@+id/buyVowel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:onClick="buyAVowel"
+        android:text="Buy a Vowel"
+        app:layout_constraintBottom_toTopOf="@+id/solvePuzzle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guessConsonant" />
+
+    <Button
+        android:id="@+id/solvePuzzle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="Solve Puzzle"
+        android:onClick="solvePuzzle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buyVowel" />
+
+    <TextView
+        android:id="@+id/tCurrentPrize"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="$0"
+        app:layout_constraintBottom_toBottomOf="@+id/lTotalPrize"
+        app:layout_constraintEnd_toStartOf="@+id/tTotalPrize"
+        app:layout_constraintStart_toEndOf="@+id/lCurrentPrize"
+        app:layout_constraintTop_toTopOf="@+id/lTotalPrize" />
+
+    <TextView
+        android:id="@+id/tTotalPrize"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="179dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginTop="79dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="$0"
+        app:layout_constraintBottom_toTopOf="@+id/tPhrase"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tCurrentPrize"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tLettersNotChosen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:layout_marginEnd="26dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="abcdefghijklmnopqrstuvwxyz"
+        app:layout_constraintBottom_toTopOf="@+id/lGuessIt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lLettersNotYetChosen"
+        app:layout_constraintTop_toBottomOf="@+id/lRemainingNumberOfGuesses" />
+
+    <TextView
+        android:id="@+id/lCurrentPrize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="21dp"
+        android:text="Current Prize:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tCurrentPrize"
+        app:layout_constraintEnd_toStartOf="@+id/tCurrentPrize"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lTotalPrize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="35dp"
+        android:text="Total Prize"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/lRemainingNumberOfGuesses"
+        app:layout_constraintEnd_toEndOf="@+id/tTotalPrize"
+        app:layout_constraintTop_toBottomOf="@+id/lTitle" />
+
+    <TextView
+        android:id="@+id/lLettersNotYetChosen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="1dp"
+        android:layout_marginStart="47dp"
+        android:text="Letters Not Yet Chosen:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tLettersNotChosen"
+        app:layout_constraintEnd_toStartOf="@+id/tLettersNotChosen"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/lRemainingNumberOfGuesses"
+        android:layout_width="144dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="62dp"
+        android:layout_marginLeft="68dp"
+        android:text="Remaining Guesses:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/tLettersNotChosen"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lTotalPrize" />
+
+    <TextView
+        android:id="@+id/tRemainingNumOfGuesses"
+        android:layout_width="52dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="4dp"
+        android:ems="10"
+        android:inputType="number"
+        android:text="0"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lRemainingNumberOfGuesses"
+        app:layout_constraintEnd_toStartOf="@+id/lTotalPrize" />
+
+    <EditText
+        android:id="@+id/tPhrase"
+        android:layout_width="370dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="281dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tTotalPrize" />
+
+    <TextView
+        android:id="@+id/lGuessIt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="53dp"
+        android:text="Guess The Phrase!"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/lGuessALetter"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tLettersNotChosen" />
+
+    <TextView
+        android:id="@+id/lGuessALetter"
+        android:layout_width="106dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="4dp"
+        android:text="Letter to Guess"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        app:layout_constraintBottom_toTopOf="@+id/tLetterToGuess"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lGuessIt" />
+
+    <EditText
+        android:id="@+id/tLetterToGuess"
+        android:layout_width="55dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:maxLength="1"
+        app:layout_constraintBottom_toTopOf="@+id/guessConsonant"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lGuessALetter" />
+
+    <TextView
+        android:id="@+id/lTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="5dp"
+        android:text="Solve A Random Puzzle"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/lTotalPrize"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.19999999" />
+
+</android.support.constraint.ConstraintLayout>

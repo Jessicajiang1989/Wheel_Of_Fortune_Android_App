@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.gatech.seclass.sdpguessit">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="WheelOfFortune"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".WheelOfFortune">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".CreateAPlayer">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".WheelOfFortune" />
+        </activity>
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".CreateAPuzzle" />
+        <activity android:name=".SolvePuzzle" />
+        <activity android:name=".CreateTournament" />
+        <activity android:name=".JoinTournament" />
+        <activity android:name=".VIewStatistics" />
+        <activity android:name=".ViewPlayerStatistics" />
+        <activity android:name=".ViewTournamentStatistics" />
+        <activity android:name=".ViewPuzzleStatistics" />
+        <activity android:name=".NoPuzzlesAvailable" />
+        <activity android:name=".ViewPlayerTournamentStatistics"></activity>
+    </application>
+
+</manifest>
