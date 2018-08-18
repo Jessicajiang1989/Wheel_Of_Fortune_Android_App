@@ -1,4 +1,4 @@
-# CS6300_finalproject
+# Wheel Of Fortune Android App
 ## USER MANUAL ##
 
 *_Wheel Of Fortune_*
