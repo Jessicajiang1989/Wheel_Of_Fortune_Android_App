@@ -1,6 +1,6 @@
 # Design Document
 
-**Author**: \<ahegde39\>
+**Author**: \<ahegde39\> \<Yuhao Lan\>
 
 ## 1 Design Considerations
 
