@@ -56,7 +56,7 @@ Sequence Diagram
 ![alt text](images/Sequence%20Diagram.png)
 
 State Diagram
-![alt text](State%20Diagram%20-%20Puzzle%20Class.png)
+![alt text](https://github.com/Yuhao-Lan/Wheel_Of_Fortune_Android_App/blob/master/GroupProject/Docs/images/State%20Diagram%20-%20Puzzle%20Class.png)
 
 ## 4 User Interface Design
 
