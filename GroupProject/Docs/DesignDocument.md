@@ -53,7 +53,7 @@
 *<u>Optionally</u>, you can decide to describe some dynamic aspects of your system using one or more behavioral diagrams, such as sequence and state diagrams.*
 
 Sequence Diagram
-![alt text](images/Sequence%Diagram.png)
+![alt text](images/Sequence%20Diagram.png)
 
 State Diagram
 ![](https://github.gatech.edu/gt-omscs-se-2018spring/6300Spring18Team46/blob/master/GroupProject/Docs/images/State%20Diagram%20-%20Puzzle%20Class.png)
