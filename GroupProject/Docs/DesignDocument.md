@@ -56,7 +56,7 @@ Sequence Diagram
 ![alt text](images/Sequence%20Diagram.png)
 
 State Diagram
-![](https://github.gatech.edu/gt-omscs-se-2018spring/6300Spring18Team46/blob/master/GroupProject/Docs/images/State%20Diagram%20-%20Puzzle%20Class.png)
+![alt text](State%20Diagram%20-%20Puzzle%20Class.png)
 
 ## 4 User Interface Design
 
