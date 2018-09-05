@@ -19,5 +19,4 @@ https://github.com/Yuhao-Lan/Wheel_Of_Fortune_Android_App/blob/master/GroupProje
 
 https://github.com/Yuhao-Lan/Wheel_Of_Fortune_Android_App/blob/master/GroupProject/Docs/UserManual.md
 
-
-
+**Codes are in PATH : Wheel_Of_Fortune_Android_App/GroupProject/SDPGuessIt/app/src/**
